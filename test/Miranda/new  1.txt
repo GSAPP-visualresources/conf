@@ -1,0 +1,44 @@
+<script type="text/javascript">
+			function infiniteScroll(page) {
+				$(window).smack({ threshold: 0.9 }).done(function(){
+					page += 1;
+					console.info("sending request for page " + page);
+					
+					var url = "/test/Miranda/search.php?Data_Projects::name=house&page=" + page;
+					
+					$.get(url, function(response){
+						var $results = $(response).find('.fieldResult');
+						
+						var $formattedResults = $.map($results, function (result){
+							return result.innerHTML + '<br>';
+						});
+						
+						$('.searchResults').append($formattedResults);
+
+						if ($results.length!=0) {
+							infiniteScroll(page);
+						}
+					});
+				});
+
+			}
+			
+			$(document).ready(function(){
+				infiniteScroll(1);
+			});
+		</script>
+		
+		
+		<!--jQuery bum-smack plugin for infinite scroll -->
+		<script type="text/javascript" src="./js/jquery.bum-smack-1.2.0.min.js"></script>
+		
+		onload = "javascript:infiniteScroll()"
+
+		
+					/* 
+						var $imgresults = $(response).find('.imageSearchCard');
+						$('.searchResults').append($imgresults);
+
+						if ($imgresults.length!=0) {
+							infiniteScroll(page);
+						} */
