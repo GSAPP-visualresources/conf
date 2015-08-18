@@ -1,0 +1,55 @@
+Inventory of Pages, Inventory of Data
+
+Data
+====
+
+Images/Resources
+	Filename
+	Serial
+	File Location
+	ArtStor Status
+
+	Project Name
+	Description
+	Image Type (ie: drawing)
+	Image Subtype (id: section)
+	Source (ie: book)
+	Creator
+
+	Project Start
+	Project End
+	Location (country)
+	Location (city)
+
+Projects
+	Serial
+	Artstor Status
+
+	Project Name
+	Location (country)
+	Location (city)
+	Project Start
+	Project End
+	
+	Creator(s)
+
+Creators
+	Serial
+	Name
+	Nationality
+	Birth
+	Death
+	Projects	
+
+Pages
+=====
+
+container.php
+images-video.php
+architects-projects.php
+project-associatedResources.php
+architect-associatedResources.php
+resource-resourceDetail.php
+search-results.php
+advancedSearch-results.php
+
