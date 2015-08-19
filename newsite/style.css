@@ -1,5 +1,5 @@
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Graphik";
 }
 
 ::-webkit-scrollbar { 
@@ -384,13 +384,7 @@ div.aboutText {
 	width: 50%;
 }
 
-img.comingSoonSelected {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	max-width: 50%;
-}
+
 
 
 
