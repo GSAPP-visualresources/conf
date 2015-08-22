@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="./css/style.php" />
+		<link rel="stylesheet" type="text/css" href="style.php" />
 		<!--<link rel="stylesheet" type="text/css" href="./css/jqModal.css" />-->
 				
 		<!--jQuery general-->
@@ -42,30 +42,34 @@
 	</head>
 	<body>
 	
-	<!--Serena's layout NEEDS TO BE REPLACED W/ NEW TAYLOR LAYOUT CODE-->
+	<!--Serena's layout has been replaced below by the new layout by Taylor Zanke-->
 	
-	
-	<div class="horizbar" id="header"><div class="horizbar2">
-		<a href="index.php"><div id="headerlogo">
-			<!--<img src="img/GSAPP_logo-whitetext.png" />-->
-			<span style="font-family:'Arial Black', Arial, sans-serif; font-size: 200%;">GSAPP </span>
-			<span style="font-family:'Arial Narrow', Arial, sans-serif; font-size: 200%;"><?php echo($site_title); ?></span>
-		</div></a>
-		
-		<div id="headersearch">
-			<form action="quickresults.php" method="get">
-			<span>
-			<input type="text" class="searchinput" name="keywords" autofocus="autofocus">
-			<input type="submit" class="searchbutton" value="Search">
-			</span>
-			</form>
-			<a href="./advancedsearch.php" data-slidepanel="panel" class="button" style="position: relative; top: 5px; clear: both;">Advanced search...</a>
-		</div>
-		
-		<div class="clear"></div>
-		
-	</div></div><!--End header bar-->
-	
-	<div class="horizbar" id="navbar"><div class="horizbar2"><?php include('00_navbar.php'); ?><div class="clear"></div></div></div><!--End Navbar-->
-	
-	<div class="horizbar" id="meat"><div class="horizbar2">
+	 	<div class="container">
+			<div class="navigation">
+	    		<div class="textLeft">
+                    Search
+                </div>
+                <div class="textCenter">
+                    <a href="">
+					Visual Resources Collection <br>
+                    Graduate School of Architecture Planning and Preservation
+                    </a>
+                </div>
+                <div class="textRight">
+                    <ul>
+                        <li class="active"><a href="images_video.html">Resources</a></li>
+                        <li><a href="architects_projects.html">Index</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+		    </div>
+
+	    	<div class="pages">
+	    		<div class="pageLeft">
+	    			<div class="pageContent"></div>
+	    		</div>
+	    		<div class="pageRight">
+	    			<div class="pageContent"></div>
+	    		</div>
+	    	</div>
+	    </div><!--close .container div-->
