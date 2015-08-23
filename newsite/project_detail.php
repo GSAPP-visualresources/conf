@@ -20,7 +20,7 @@
                 </div>
                 <div class="textRight">
                     <ul>
-                        <li><a href="images_video.html">Resources</a></li>
+                        <li><a href="images_video.php">Resources</a></li>
                         <li class="active"><a href="architects_projects.html">Index</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>

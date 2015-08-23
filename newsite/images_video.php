@@ -1,3 +1,7 @@
+<?php 
+include('header.php'); 
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,37 +10,7 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-
-    <div class="container">
-		<div class="navigation">
-	    		<div class="textLeft">
-                    <fieldset>
-                       <form action="quickresults.php" method="get">
-			             <span>
-                            <input class="searchBar" type="search" name="vrc_search" placeholder="Search"
-                            autofocus="autofocus">
-			              </span>
-			           </form>
-    </div>
-                        
-                        
-                    </fieldset>
-                </div>
-                <div class="textCenter">
-                    Visual Resources Collection <br>
-                    Graduate School of Architecture Planning and Preservation
-                </div>
-                <div class="textRight">
-                    <ul>
-                        <li class="active"><a href="images_video.html">Resources</a></li>
-                        <li><a href="architects_projects.html">Index</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-	    </div>
-
-	   	<div class="pages">
-	   		<div class="pageLeft">
+<!--
                 <div class="pageContent">
                     <div class="label"><div class="labelText">Images</div></div>
                     <div class="displayBlock">
@@ -233,7 +207,6 @@
                     </div>
                 </div>
             </div>
-	   		<div class="pageRight">
                 <div class="pageContent">
                 <div class="label"><div class="labelText">Video</div></div>
                     <div class="displayBlock">
@@ -436,7 +409,7 @@
     </div>
 
 
-
+-->
 
     </body>
 </html>

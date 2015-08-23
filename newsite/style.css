@@ -16,7 +16,6 @@ div.textCenter {
 	text-align: center;
 	float: left;
 	position: absolute;
-	display: inline;
 	left: 0; right: 0; top: 0;
 	z-index: -100;
 }

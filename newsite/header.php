@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
+		<title>Quick Search</title>
+		  
 		<link rel="stylesheet" type="text/css" href="style.php" />
 		<!--<link rel="stylesheet" type="text/css" href="./css/jqModal.css" />-->
 				
@@ -39,37 +42,55 @@
 		?>
 		
 		<?php $projectionFilepath=""; ?>
-	</head>
+		
+				<!--Serena's layout has been replaced below by the new layout by Taylor Zanke-->
+				
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+	
 	<body>
-	
-	<!--Serena's layout has been replaced below by the new layout by Taylor Zanke-->
-	
-	 	<div class="container">
-			<div class="navigation">
+
+<!--Searchbar-->
+
+    <div class="container">
+		<div class="navigation">
 	    		<div class="textLeft">
-                    Search
+                    <fieldset>
+                         <form action="quickresults.php" method="get">
+			             <span>
+                         <input class="searchBar" type="search" name="vrc_search" placeholder="Search"
+                         autofocus="autofocus">
+			             </span>
+			           </form>
+    				</div>
+                    </fieldset>
                 </div>
+				
+<!--Center Text-->
+				
                 <div class="textCenter">
-                    <a href="">
-					Visual Resources Collection <br>
-                    Graduate School of Architecture Planning and Preservation
-                    </a>
+					<a href="images_video.php/">Visual Resources Collection <br>Graduate School of Architecture Planning and Preservation</a>
                 </div>
-                <div class="textRight">
+				
+<!--Nav Bar-->
+
+<div class="textRight">
+	<div class="navigation">
+		<div class="textRight">
                     <ul>
-                        <li class="active"><a href="images_video.html">Resources</a></li>
+                        <li><a href="images_video.php">Resources</a></li>
                         <li><a href="architects_projects.html">Index</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
-		    </div>
+	    </div>
 
-	    	<div class="pages">
-	    		<div class="pageLeft">
-	    			<div class="pageContent"></div>
-	    		</div>
-	    		<div class="pageRight">
-	    			<div class="pageContent"></div>
-	    		</div>
-	    	</div>
-	    </div><!--close .container div-->
+  <!--Page Borders-->
+
+	   	<div class="pages">
+	   		<div class="pageLeft">
+                </div>
+            <div class="pageRight">
+                </div>
+            </div>
