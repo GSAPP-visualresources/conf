@@ -10,7 +10,10 @@ include('header.php');
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-<!--
+
+	   	<div class="pages">
+	   		<div class="pageLeft">
+                </div>
                 <div class="pageContent">
                     <div class="label"><div class="labelText">Images</div></div>
                     <div class="displayBlock">
@@ -257,6 +260,10 @@ include('header.php');
                         </div>
                         </div>
                     </div>
+                    
+                   <div class="pageRight">
+                </div>
+            </div>
                     <div class="displayBlock">
                         <div class="inner">
                         <img src="assets/Paimio_Sanatorium2.jpg">
@@ -407,9 +414,6 @@ include('header.php');
             </div>
 	   	</div>
     </div>
-
-
--->
 
     </body>
 </html>
