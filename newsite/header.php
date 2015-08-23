@@ -42,8 +42,6 @@
 		?>
 		
 		<?php $projectionFilepath=""; ?>
-		
-				<!--Serena's layout has been replaced below by the new layout by Taylor Zanke-->
 				
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -80,8 +78,8 @@
 		<div class="textRight">
                     <ul>
                         <li><a href="images_video.php">Resources</a></li>
-                        <li><a href="architects_projects.html">Index</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="architects_projects.php">Index</a></li>
+                        <li><a href="about.php">About</a></li>
                     </ul>
                 </div>
 	    </div>

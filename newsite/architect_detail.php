@@ -1,3 +1,7 @@
+<?php 
+include('header.php'); 
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,26 +10,6 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-
-    <div class="container">
-		<div class="navigation">
-	    		<div class="textLeft">
-                    <fieldset>
-                        <input class="searchBar" type="search" name="vrc_search" placeholder="Search">
-                    </fieldset>
-                </div>
-                <div class="textCenter">
-                    Visual Resources Collection <br>
-                    Graduate School of Architecture Planning and Preservation
-                </div>
-                <div class="textRight">
-                    <ul>
-                        <li><a href="images_video.html">Resources</a></li>
-                        <li class="active"><a href="architects_projects.html">Index</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-	    </div>
 
 	   	<div class="pages">
 	   		<div class="pageLeft">

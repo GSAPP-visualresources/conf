@@ -1,3 +1,7 @@
+<?php 
+include('header.php'); 
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,28 +11,6 @@
     </head>
     <body>
 
-    <div class="container">
-		<div class="navigation">
-	    		<div class="textLeft">
-                    <fieldset>
-                        <input class="searchBar" type="search" name="vrc_search" placeholder="Search">
-                    </fieldset>
-                </div>
-                <div class="textCenter">
-                    Visual Resources Collection <br>
-                    Graduate School of Architecture Planning and Preservation
-                </div>
-                <div class="textRight">
-                    <ul>
-                        <li><a href="images_video.html">Resources</a></li>
-                        <li><a href="architects_projects.html">Index</a></li>
-                        <li class="active"><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-	    </div>
-
-	   	<div class="pages">
-	   		<div class="pageLeft">
                 <div class="pageContent">
                     <div class="label"><div class="labelText">Contact</div></div>
 
@@ -36,8 +18,6 @@
 
                 </div>
             </div>
-            <div class="pageRight">
-                <div class="pageContent">
                     <div class="label"><div class="labelText">About</div></div>
                     
                     <div class="aboutText">The Visual Resources Collection (VRC) is a student-run facility providing GSAPP students and faculty with more than 200,000 images in digital, 35mm slide, and lantern slide formats. Our collection also includes VHS and DVD recordings of over twenty years of lectures and events held at GSAPP.<br>Students and faculty can access our entire digital collection of images using an intranet site from any GSAPP computer. That website is fully searchable and includes all of our current database entries, including images and media.<br>Alumni and outside researchers cannot view the intranet site without access to a GSAPP computer, but are free to make an appointment with our curators on a limited basis to discuss research needs.</div>
