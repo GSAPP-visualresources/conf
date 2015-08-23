@@ -9,3 +9,10 @@ if(isset($_GET["keywords"])) {
 
 include('includes/fm-search.php');
 fmSearchResults($searchArray); ?>
+
+	   	<div class="pages">
+	   		<div class="pageLeft">
+                </div>
+            <div class="pageRight">
+                </div>
+            </div>

@@ -83,12 +83,3 @@
                     </ul>
                 </div>
 	    </div>
-
-  <!--Page Borders-->
-
-	   	<div class="pages">
-	   		<div class="pageLeft">
-                </div>
-            <div class="pageRight">
-                </div>
-            </div>
