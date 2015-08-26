@@ -6,14 +6,14 @@
 		
 		<title>Quick Search</title>
 		  
-		<link rel="stylesheet" type="text/css" href="style.php" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 		<!--<link rel="stylesheet" type="text/css" href="./css/jqModal.css" />-->
 				
 		<!--jQuery general-->
 		<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
 		
 		<!--ZeroClipboard-->
-		<script src="_assets/js/ZeroClipboard.js" type="text/javascript"></script>
+		<script src="js/ZeroClipboard.js" type="text/javascript"></script>
 		
 		<!--Slidepanel-->
 		<script type="text/javascript" src="./js/jquery.slidepanel.js"></script>
