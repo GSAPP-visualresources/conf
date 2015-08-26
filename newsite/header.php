@@ -15,6 +15,9 @@
 		<!--ZeroClipboard-->
 		<script src="js/ZeroClipboard.js" type="text/javascript"></script>
 		
+		<!--currentLink-->
+		<script src="js/currentLink.js" type="text/javascript"></script>
+		
 		<!--Slidepanel-->
 		<script type="text/javascript" src="./js/jquery.slidepanel.js"></script>
 		<link rel="stylesheet" href="./css/jquery.slidepanel.css" type="text/css" media="screen" />
