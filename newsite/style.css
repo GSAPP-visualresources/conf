@@ -1,5 +1,5 @@
 body {
-	font-family: "Graphik";
+	font-family: "Graphik", Helvetica, Arial, sans-serif;
 }
 
 ::-webkit-scrollbar { 
@@ -381,7 +381,7 @@ div.aboutText {
 	margin: 0 20px 0 20px;
 	text-align: left;
 	line-height: 22px;
-	width: 50%;
+	max-width: 400px;
 }
 
 
