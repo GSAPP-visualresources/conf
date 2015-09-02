@@ -381,11 +381,21 @@ div.aboutText {
 	margin: 0 20px 0 20px;
 	text-align: left;
 	line-height: 22px;
-	max-width: 400px;
+	max-width: 350px;
 }
 
+div.aboutSubtext {
+}
 
+div.aboutSubtext p {
+	font-size: 12px;
+	line-height: 10px;
+}
 
+div.aboutSubtext p.subtextHead {
+	text-decoration: underline;
+	padding-top: 10px;
+}
 
 
 
