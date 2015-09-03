@@ -17,6 +17,5 @@ if(isset($_GET["keywords"])) {
                 </div>
             <div class="pageRight">
                 <div class="label"><div class="labelText">Images</div></div>
-                    <?php include('includes/fm-search.php');
-                        fmSearchResults($searchArray);?>
+                
                 </div>
