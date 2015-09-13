@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		
+		<!--this is test text inside here-->
 		<title>Quick Search</title>
 		  
 		<link rel="stylesheet" type="text/css" href="style.css" />
