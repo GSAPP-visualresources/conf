@@ -60,7 +60,7 @@
                     <fieldset>
                          <form action="quickresults.php" method="get">
 			             <span>
-                         <input class="searchBar" type="search" name="vrc_search" placeholder="Search"
+                         <input class="searchBar" type="search" name="keywords" placeholder="Search"
                          autofocus="autofocus">
 			             </span>
 			           </form>
