@@ -93,9 +93,7 @@ function fmDisplaySearchResults($result,$whetherToPaginate) {
 
 		foreach ($records as $record) {
 			//searchResultDisplay($record,$fileType);
-			if($record->getField('Source_Type')=="Images") {
-				displayImgPreview($record);
-			} 
+			if($record->getField('Source_Type')=="Images") 
 				displayImgPreview($record);
 				$fileType = "Images";
 			}
