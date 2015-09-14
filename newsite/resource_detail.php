@@ -236,10 +236,12 @@ foreach ($records as $record)
             <div class="pageRight">
                 <div class="pageContent">
                     <div class="label"><div class="labelText"></div></div>
-
+                    <?php
                     <div class="resourceDetail">
                     <figure>
-                        <img src="img/thumbnails/'.basename($record->getField('Filepath_Thumbnail')).'">
+                        <img src="img/thumbnails/'.basename($record->getField('Filepath_Thumbnail')).'">;
+                        include('includes/clipsection.php')
+                        ?>
                         <figcaption>To download this image copy this <a href="">link</a> <br> into a  new browser window. </figcaption>
                     </figure>
                     
