@@ -71,7 +71,7 @@
 <!--Center Text-->
 				
                 <div class="textCenter">
-					<a href="images_video.php">Visual Resources Collection<br>Graduate School of Architecture Planning and Preservation</a>
+					<p>Visual Resources Collection<br>Graduate School of Architecture Planning and Preservation</p>
                 </div>
 				
 <!--Nav Bar-->

@@ -13,7 +13,7 @@ if(isset($_GET["keywords"])) {
 	   	<div class="pages">
 	   		<div class="pageLeft">
                 <div class="label"><div class="labelText">Images</div></div>
-<!--replace fmsearchresults-->
+<!--replace fmsearchresults here, from line 9 above-->
                 </div>
             <div class="pageRight">
                 <div class="label"><div class="labelText">Images</div></div>
