@@ -96,9 +96,7 @@ function fmDisplaySearchResults($result,$whetherToPaginate) {
 			if($record->getField('Source_Type')=="Video") {
 				displayVideoPreview($record);
 			} else {
-				if($fileType != "Images") {
-					echo ('<p>&nbsp;</p><div class="recordSeparator">Images</div>'); //C(T): we don't need this, it's just something done before to make space between video and image results
-				}
+				if($fileType != "Images") 
 				displayImgPreview($record);
 				$fileType = "Images";
 			}
