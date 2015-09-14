@@ -5,32 +5,21 @@ include('header.php');
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Resource Detail</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
+        
+<?php
+$img_id=$_GET["img_id"];
 
-    <div class="container">
-		<div class="navigation">
-	    		<div class="textLeft">
-                    <fieldset>
-                        <input class="searchBar" type="search" name="vrc_search" placeholder="Search">
-                    </fieldset>
-                </div>
-                <div class="textCenter">
-                    Visual Resources Collection <br>
-                    Graduate School of Architecture Planning and Preservation
-                </div>
-                <div class="textRight">
-                    <ul>
-                        <li class="active"><a href="images_video.html">Resources</a></li>
-                        <li><a href="architects_projects.html">Index</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-	    </div>
-
+$findCommand =& $fm->newFindCommand('AllInfo');
+$findCommand->addFindCriterion('Filename', $img_id);
+$result = $findCommand->execute();
+$records = $result->getRecords();
+foreach ($records as $record) 
+	?>
 	   	<div class="pages">
 	   		<div class="pageLeft">
                 <div class="pageContent noscroll"><!--added noscroll class to prevent scrolling behind overlay-->
