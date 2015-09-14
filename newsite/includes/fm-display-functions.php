@@ -43,7 +43,7 @@ function highlight($text,$words) {
 function displayImgPreview($record) {
 	global $querystringadded,$querykeywords;
 	$strOutput = "";
-	$strOutput .= '<a href="slideview.php?img_id=';
+	$strOutput .= '<a href="resource_detail.php?img_id=';
 	$strOutput .= fmDisplayFieldResult('Filename',$record);
 	$strOutput .= $querystringadded.'"><div class="tilethumbcontainer"><img class="tilethumb" src="img/';
 	$strOutput .= 'thumbnails/'.basename($record->getField('Filepath_Thumbnail'));
