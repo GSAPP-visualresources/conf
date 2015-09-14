@@ -12,7 +12,7 @@ include('header.php');
     <body>
 
 	 	<div class="pages">
-	   		<div class="pageLeft">
+	   		<div class="pageLeft"> 
                 <div class="pageContent">
                     <div class="label"><div class="labelText">Images</div></div>
                     <div class="displayBlock">
