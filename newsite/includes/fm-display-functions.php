@@ -63,7 +63,7 @@ function displayImgPreview($record) {
 function displayVideoPreview($record) {
 	global $querystringadded;
 	echo '<h3>';
-	echo '<a href="slideview.php?img_id=';
+	echo '<a href="resource_detail.php?img_id=';
 	echo fmDisplayFieldResult('Filename',$record);
 	echo $querystringadded.'">';
 	echo fmDisplayFieldResult('Title',$record).'</h3></a>';
