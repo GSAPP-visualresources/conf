@@ -6,14 +6,14 @@ if(isset($_GET["keywords"])) {
 	$quicksearch = $_GET["keywords"];
 	$searchArray["keywords"]=$quicksearch;
 ;}
-
+                    <?php include('includes/fm-search.php');
+                        fmSearchResults($searchArray);?>
 ?>
 
 	   	<div class="pages">
 	   		<div class="pageLeft">
                 <div class="label"><div class="labelText">Images</div></div>
-                    <?php include('includes/fm-search.php');
-                        fmSearchResults($searchArray);?>
+<!--replace fmsearchresults-->
                 </div>
             <div class="pageRight">
                 <div class="label"><div class="labelText">Images</div></div>
