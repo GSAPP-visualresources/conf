@@ -93,13 +93,10 @@ function fmDisplaySearchResults($result,$whetherToPaginate) {
 
 		foreach ($records as $record) {
 			//searchResultDisplay($record,$fileType);
-			if($record->getField('Source_Type')=="Video") {
-				displayVideoPreview($record);
-			} else {
-				if($fileType != "Images") 
+			if($record->getField('Source_Type')=="Images") {
 				displayImgPreview($record);
 				$fileType = "Images";
-			}
+			
 		}
 		
 		if($whetherToPaginate) { // adds pagination if specified. Disabled for "recent additions" mode.
