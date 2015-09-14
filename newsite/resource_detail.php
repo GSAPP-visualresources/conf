@@ -236,8 +236,8 @@ foreach ($records as $record)
             <div class="pageRight">
                 <div class="pageContent">
                     <div class="label"><div class="labelText"></div></div>
-                    <?php
                     <div class="resourceDetail">
+                    <?php
                     <figure>
                         <img src="img/thumbnails/'.basename($record->getField('Filepath_Thumbnail')).'">;
                         include('includes/clipsection.php')
