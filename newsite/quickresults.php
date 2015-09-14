@@ -6,8 +6,8 @@ if(isset($_GET["keywords"])) {
 	$quicksearch = $_GET["keywords"];
 	$searchArray["keywords"]=$quicksearch;
 ;}
-                    <?php include('includes/fm-search.php');
-                        fmSearchResults($searchArray);?>
+                   include('includes/fm-search.php');
+                        fmSearchResults($searchArray);
 ?>
 
 	   	<div class="pages">
