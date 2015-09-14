@@ -96,7 +96,7 @@ function fmDisplaySearchResults($result,$whetherToPaginate) {
 			if($record->getField('Source_Type')=="Images") {
 				displayImgPreview($record);
 				$fileType = "Images";
-			
+			}
 		}
 		
 		if($whetherToPaginate) { // adds pagination if specified. Disabled for "recent additions" mode.
