@@ -237,11 +237,16 @@ foreach ($records as $record)
                 <div class="pageContent">
                     <div class="label"><div class="labelText"></div></div>
                     <div class="resourceDetail">
-                    <?php
                     <figure>
-                        <img src="img/thumbnails/'.basename($record->getField('Filepath_Thumbnail')).'">;
-                        include('includes/clipsection.php')
-                        ?>
+                    <?php
+                        if($record->getField('Source_Type')=='Video') {
+		echo '<img class="tilethumb" src="img/videoicon.png">';
+	} else {
+		$projectionFilepath=fmDisplayFieldResult('Filepath_Projection',$record);
+		echo '<img class="tilethumb" src="img/thumbnails/'.basename($record->getField('Filepath_Thumbnail')).'">';
+		include('includes/clipsection.php');
+	}
+	?>
                         <figcaption>To download this image copy this <a href="">link</a> <br> into a  new browser window. </figcaption>
                     </figure>
                     
