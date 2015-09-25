@@ -1,0 +1,410 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+li.active {
+	border-bottom: 2px solid black;
+	padding-bottom: 5px;
+}
+
+div.textCenter {
+	font-size: 12px;
+	text-align: center;
+	float: left;
+	position: absolute;
+	display: inline;
+	left: 0; right: 0; top: 0;
+	z-index: -100;
+}
+
+div.textRight ul li a {
+	text-decoration: none;
+	color: black;
+}
+div.textRight ul li a:visited {
+	text-decoration: none;
+	color: black;
+}
+div.textRight ul li a:hover {
+	cursor: pointer;
+}
+
+div.container {
+	position: absolute;
+	top: 0px; bottom: 20px; left: 20px; right: 20px;
+	min-width: 960px;
+	/*border: 2px solid blue; */
+}
+
+div.navigation {
+	font-size: 16px;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	right: 0;
+}
+div.navigation .textLeft, .textRight, .textCenter {
+	margin: 40px 0 0 0;
+}
+
+div.navigation fieldset {
+	position: relative;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+div.navigation input.searchBar {
+	border: none;
+	font-size: 16px;
+	padding: 0 0 5px 0;
+	display: inline-block;
+	white-space: nowrap;
+	width: 72px;
+}
+
+div.navigation input.searchBar:hover {
+	border-bottom: 2px solid black;
+	-webkit-transition: opacity .2s ease-in-out
+}
+
+div.navigation input.searchBar::-webkit-input-placeholder {
+   color: black;
+   border-bottom: 2px solid transparent;
+   -webkit-transition: opacity .2s ease-in-out
+}
+div.navigation input.searchBar:focus {
+	border-bottom: 2px solid black;
+	opacity: 100%;
+}
+div.navigation input.searchBar:focus::-webkit-input-placeholder {
+	opacity: 0;
+	-webkit-transition: opacity .2s ease-in-out
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+div.textLeft {
+	float: left;
+	z-index: 100;
+}
+div.textRight {
+	float: right;
+	text-align: right;
+	z-index: 100;
+}
+div.textRight ul {
+	margin: 0;
+	padding: 0;
+}
+div.textRight ul li {
+	list-style-type: none;
+	float: left;
+	margin-left: 50px;
+}
+
+div.pages {
+	position: absolute;
+	top: 100px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*border: 2px solid black;*/
+	display: inline-block;
+}
+
+div.pageLeft {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 50%;
+	bottom: 0;
+	border: 2px solid black;
+	border-right: 1px solid black;
+}
+
+div.pageRight {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 0;
+	bottom: 0;
+	border: 2px solid black;
+	border-left: 1px solid black;
+}
+
+div.pageLeft, div.pageRight {
+	padding: 10px;
+	/*overflow: hidden;*/
+	/*overflow: scroll;
+	overflow-x: hidden;*/
+	margin: 0;
+	padding: 0;
+}
+
+div.label {
+	font-size: 16px;
+	position: relative;
+	text-align: center;
+	background: none;
+	width: 100%;
+	padding: 20px 0 120px 0;
+}
+div.labelText {
+	position: fixed;
+	width: 49%;
+	min-width: 480px;
+	z-index: 50;
+}
+
+.pageContent {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	overflow: scroll;
+	overflow-x: hidden;
+	text-align: center;
+	/*padding: 2%;*/
+}
+
+.displayBlock {
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+	margin: 0 10px 80px 10px;
+}
+
+.displayBlock div.inner {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	float: left;
+	display: block;
+	line-height: 200px;
+}
+
+.displayBlock img {
+	background: #ccc;
+	display: inline;
+	width: 100%;
+	vertical-align: middle;
+	-webkit-filter: grayscale(100%);
+}
+
+.displayBlock div.displayContentHover {
+	width: 200px;
+	height: 200px;
+	display: table;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	line-height: 20px;
+	font-size: 16px;
+	opacity: 0;
+}
+div.displayBlock:hover {
+	cursor: pointer;
+}
+div.displayBlock:hover img {
+	opacity: 0;
+}
+div.displayBlock:hover .displayContentHover {
+	opacity: 100;
+}
+
+.displayContentHover ul {
+	list-style-type: none;
+	margin: 0; padding: 0;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.pageContent:last-child {
+	position: absolute;
+	left: 0;
+}
+
+.noscroll {
+	overflow: hidden;
+	overflow-y: noscroll; overflow-x: noscroll;
+} /*this class is added to the .pageContent div in order to prevent scrolling behind selected detail overlay--should only be included on .pageLeft side*/
+
+table.sortable {
+	width: 90%;
+	font-size: 16px;
+	text-align: left;
+	line-height: 18px;
+	/*margin: 0 20px 0 20px;*/
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+table.sortable td {
+	width: 16.66%;
+	vertical-align: top;
+}
+
+table.sortable thead {
+	top: 120px;
+	font-family: courier;
+	font-size: 10px;
+}
+
+table.sortable thead tr td {
+	padding: 0 0 25px 0;
+}
+table.sortable tbody tr {
+	border-bottom: 2px solid transparent;
+}
+
+table.sortable tbody tr:hover {
+	border-bottom: 2px solid black;
+	cursor: pointer;
+}
+
+.resourceDetail img {
+	/*width: 90%;*/
+	max-height: 500px;
+	max-width: 90%;
+}
+
+.resourceDetail figcaption {
+	font-family: courier;
+	font-size: 10px;
+	text-align: left;
+	margin-top: 12px;
+}
+.resourceDetail figcaption a {
+	color: black;
+}
+.resourceDetail figcaption a:visited {
+	color: black;
+}
+
+.centerText {
+	margin: 80px 0 80px 0;
+	text-align: center;
+	/*margin-bottom: 20px;*/
+}
+
+table.workTable {
+	font-size: 16px;
+	text-align: left;
+	line-height: 22px;
+	border-collapse: collapse;
+	margin: 20px auto;
+	width: 90%;
+}
+
+table.workTable tr td {
+	border: 2px solid black;
+	border-left: none;
+	border-top: none;
+	padding: 10px;
+	width: 45%;
+}
+table.workTable tr td:last-child {
+	border-right: none;
+}
+
+
+.selectedItem {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	opacity: 1;
+	background-color: white;
+	z-index: 100;
+	display: block;
+	-webkit-transition: opacity .1s ease-in-out;
+	color: black;
+}
+.selectedItem:visited {
+	color: black;
+}
+
+.selectedItem:hover {
+	opacity: .75;
+	background-color: white;
+	-webkit-transition: opacity .1s ease-in-out;
+	cursor: pointer;
+}
+
+.itemInfo {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3em;
+    width: 100%;
+ 	margin-top: -50px;
+}
+.itemInfoText {
+	opacity: 1;
+	-webkit-transition: opacity .2s ease-in-out;
+}
+.selectedItem:hover .itemInfoText {
+	opacity: 0;
+	-webkit-transition: opacity .1s ease-in-out;
+}
+
+.itemInfo span {
+	font-size: 10px;
+	display: block;
+	color: black;
+	font-family: courier;
+}
+
+.projectsDisplay {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+}
+.projectsDisplay img {
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+}
+
+.associatedProjectsInfo {
+	text-align: left;
+	margin: 0 20px 0 20px;
+}
+
+div.aboutText {
+	margin: 0 20px 0 20px;
+	text-align: left;
+	line-height: 22px;
+	width: 50%;
+}
+
+img.comingSoonSelected {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	max-width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
