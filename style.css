@@ -1,5 +1,10 @@
+@font-face {
+font-family: GraphikRegular;
+src: url(assets/GraphikRegular.otf) format("opentype");
+}
+
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: GraphikRegular, Helvetica, Arial;
 }
 
 ::-webkit-scrollbar { 

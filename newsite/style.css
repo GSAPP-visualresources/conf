@@ -1,5 +1,5 @@
 body {
-	font-family: "Graphik";
+	font-family: "Graphik", Helvetica, Arial, sans-serif;
 }
 
 ::-webkit-scrollbar { 
@@ -381,11 +381,41 @@ div.aboutText {
 	margin: 0 20px 0 20px;
 	text-align: left;
 	line-height: 22px;
-	width: 50%;
+	max-width: 350px;
 }
 
+div.aboutSubtext {
+	margin-left: 50px;
+}
 
+div.aboutSubtext p {
+	font-size: 12px;
+	line-height: 14px;
+}
 
+div.aboutSubtext p.subtextHead {
+	display: inline;
+	border-bottom: 1px solid black;
+	padding-bottom: 2px;
+	
+	padding-top: 10px;
+}
+div.aboutSubtext p.subtextLine {
+	/*padding-left: 12px;*/
+	/*margin-top: -14px;*/
+}
+div.aboutSubtext a:link {
+	text-decoration: none;
+	color: black;
+
+}
+div.aboutSubtext a:visited {
+	color: black;
+}
+div.aboutSubtext a:active {
+}
+div.aboutSubtext a:hover {
+}
 
 
 
