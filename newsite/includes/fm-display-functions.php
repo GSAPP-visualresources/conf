@@ -41,13 +41,9 @@ function highlight($text,$words) {
 
 //outputs an image record in thumbnail format with hover information
 function displayImgPreview($record) {
-	global $querystringadded,$querykeywords;
+	global $querystringadded,$querykeywords; 
 	$strOutput = "";
 	$strOutput .= '<a href="resource_detail.php?img_id=';
-<<<<<<< HEAD
-=======
-	$strOutput .= '<a href="resource_detail.php?img_id=';
->>>>>>> cec361cdba7f7d03cfc9f70498da1e97e4143cf8
 	$strOutput .= fmDisplayFieldResult('Filename',$record);
 	$strOutput .= $querystringadded.'"><div class="tilethumbcontainer"><img class="tilethumb" src="img/';
 	$strOutput .= 'thumbnails/'.basename($record->getField('Filepath_Thumbnail'));
