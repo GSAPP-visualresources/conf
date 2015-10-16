@@ -42,6 +42,9 @@ function highlight($text,$words) {
 //outputs an image record in thumbnail format with hover information
 function displayImgPreview($record) {
 	global $querystringadded,$querykeywords;
+
+	$strOutput = "hi";
+
 	$strOutput = "";
 	$strOutput .= '<a href="resource_detail.php?img_id=';
 	$strOutput .= fmDisplayFieldResult('Filename',$record);
