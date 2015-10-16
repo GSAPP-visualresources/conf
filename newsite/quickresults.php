@@ -20,6 +20,7 @@ if(isset($_GET["keywords"])) {
                 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 </div>
 
 <!--testing on saturday-->
@@ -31,3 +32,6 @@ if(isset($_GET["keywords"])) {
 
 <!--test 20151016-->
 >>>>>>> aff42bb3bdfda6b8f9f1544d28920a4e46d38a5e
+=======
+                </div>
+>>>>>>> 3c6da74b5dc2cba4fa7107be673c34ea7dfef2d4
