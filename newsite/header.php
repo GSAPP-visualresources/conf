@@ -7,6 +7,11 @@
 		<title>Quick Search</title>
 		  
 		<link rel="stylesheet" type="text/css" href="style.css" />
+<<<<<<< HEAD
+=======
+
+		<link rel="stylesheet" type="text/css" href="./css/style.php" />
+>>>>>>> 7f681ad8c642ffeca0deed747b49771800de5cbc
 		<!--<link rel="stylesheet" type="text/css" href="./css/jqModal.css" />-->
 				
 		<!--jQuery general-->
@@ -17,6 +22,11 @@
 		
 		<!--currentLink-->
 		<script src="js/currentLink.js" type="text/javascript"></script>
+<<<<<<< HEAD
+=======
+
+		<script src="_assets/js/ZeroClipboard.js" type="text/javascript"></script>
+>>>>>>> 7f681ad8c642ffeca0deed747b49771800de5cbc
 		
 		<!--Slidepanel-->
 		<script type="text/javascript" src="./js/jquery.slidepanel.js"></script>
@@ -85,4 +95,38 @@
                         <li><a href="about.php">About</a></li>
                     </ul>
                 </div>
+<<<<<<< HEAD
 	    </div>
+=======
+	    </div>
+	</head>
+	<body>
+	
+	<!--Serena's layout NEEDS TO BE REPLACED W/ NEW TAYLOR LAYOUT CODE-->
+	
+	
+	<div class="horizbar" id="header"><div class="horizbar2">
+		<a href="index.php"><div id="headerlogo">
+			<!--<img src="img/GSAPP_logo-whitetext.png" />-->
+			<span style="font-family:'Arial Black', Arial, sans-serif; font-size: 200%;">GSAPP </span>
+			<span style="font-family:'Arial Narrow', Arial, sans-serif; font-size: 200%;"><?php echo($site_title); ?></span>
+		</div></a>
+		
+		<div id="headersearch">
+			<form action="quickresults.php" method="get">
+			<span>
+			<input type="text" class="searchinput" name="keywords" autofocus="autofocus">
+			<input type="submit" class="searchbutton" value="Search">
+			</span>
+			</form>
+			<a href="./advancedsearch.php" data-slidepanel="panel" class="button" style="position: relative; top: 5px; clear: both;">Advanced search...</a>
+		</div>
+		
+		<div class="clear"></div>
+		
+	</div></div><!--End header bar-->
+	
+	<div class="horizbar" id="navbar"><div class="horizbar2"><?php include('00_navbar.php'); ?><div class="clear"></div></div></div><!--End Navbar-->
+	
+	<div class="horizbar" id="meat"><div class="horizbar2">
+>>>>>>> 7f681ad8c642ffeca0deed747b49771800de5cbc

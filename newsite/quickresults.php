@@ -18,6 +18,10 @@ if(isset($_GET["keywords"])) {
             <div class="pageRight">
                 <div class="label"><div class="labelText">Images</div></div>
                 
+<<<<<<< HEAD
                 </div>
 
 <!--testing on saturday-->
+=======
+                </div>
+>>>>>>> 7f681ad8c642ffeca0deed747b49771800de5cbc
