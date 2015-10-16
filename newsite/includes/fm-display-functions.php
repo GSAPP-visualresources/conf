@@ -44,10 +44,7 @@ function displayImgPreview($record) {
 	global $querystringadded,$querykeywords;
 	$strOutput = "";
 	$strOutput .= '<a href="resource_detail.php?img_id=';
-<<<<<<< HEAD
-=======
-	$strOutput .= '<a class="HI" href="resource_detail.php?img_id=';
->>>>>>> 3cc4b201a376d5b4c4aa4407d8f90427766daa1d
+	$strOutput .= '<a href="resource_detail.php?img_id=';
 	$strOutput .= fmDisplayFieldResult('Filename',$record);
 	$strOutput .= $querystringadded.'"><div class="tilethumbcontainer"><img class="tilethumb" src="img/';
 	$strOutput .= 'thumbnails/'.basename($record->getField('Filepath_Thumbnail'));
