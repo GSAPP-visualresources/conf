@@ -43,11 +43,7 @@ function highlight($text,$words) {
 function displayImgPreview($record) {
 	global $querystringadded,$querykeywords;
 	$strOutput = "";
-<<<<<<< HEAD
 	$strOutput .= '<a href="resource_detail.php?img_id=';
-=======
-	$strOutput .= '<a href="slideview.php?img_id=';
->>>>>>> 26e1779b0b215c46721f19ff657d7cb877299bac
 	$strOutput .= fmDisplayFieldResult('Filename',$record);
 	$strOutput .= $querystringadded.'"><div class="tilethumbcontainer"><img class="tilethumb" src="img/';
 	$strOutput .= 'thumbnails/'.basename($record->getField('Filepath_Thumbnail'));
@@ -67,11 +63,7 @@ function displayImgPreview($record) {
 function displayVideoPreview($record) {
 	global $querystringadded;
 	echo '<h3>';
-<<<<<<< HEAD
 	echo '<a href="resource_detail.php?img_id=';
-=======
-	echo '<a href="slideview.php?img_id=';
->>>>>>> 26e1779b0b215c46721f19ff657d7cb877299bac
 	echo fmDisplayFieldResult('Filename',$record);
 	echo $querystringadded.'">';
 	echo fmDisplayFieldResult('Title',$record).'</h3></a>';
@@ -102,24 +94,12 @@ function fmDisplaySearchResults($result,$whetherToPaginate) {
 		foreach ($records as $record) {
 			//searchResultDisplay($record,$fileType);
 			if($record->getField('Source_Type')=="Video") {
-<<<<<<< HEAD
 				displayImgPreview($record);
 			} 
 				displayImgPreview($record);
 				$fileType = "Images";	
 			}
 
-=======
-				displayVideoPreview($record);
-			} else {
-				if($fileType != "Images") {
-					echo ('<p>&nbsp;</p><div class="recordSeparator">Images</div>');
-				}
-				displayImgPreview($record);
-				$fileType = "Images";
-			}
-		}
->>>>>>> 26e1779b0b215c46721f19ff657d7cb877299bac
 		
 		if($whetherToPaginate) { // adds pagination if specified. Disabled for "recent additions" mode.
 			?>
