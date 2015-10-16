@@ -1,34 +1,26 @@
-<<<<<<< HEAD
 <?php include('settings.php'); ?>
-=======
-<?php include('00_settings.php'); ?>
->>>>>>> 26e1779b0b215c46721f19ff657d7cb877299bac
 
 <!DOCTYPE html>
 <html>
 	<head>
-<<<<<<< HEAD
 		
 		<title>Quick Search</title>
 		  
 		<link rel="stylesheet" type="text/css" href="style.css" />
-=======
+
 		<link rel="stylesheet" type="text/css" href="./css/style.php" />
->>>>>>> 26e1779b0b215c46721f19ff657d7cb877299bac
 		<!--<link rel="stylesheet" type="text/css" href="./css/jqModal.css" />-->
 				
 		<!--jQuery general-->
 		<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
 		
 		<!--ZeroClipboard-->
-<<<<<<< HEAD
 		<script src="js/ZeroClipboard.js" type="text/javascript"></script>
 		
 		<!--currentLink-->
 		<script src="js/currentLink.js" type="text/javascript"></script>
-=======
+
 		<script src="_assets/js/ZeroClipboard.js" type="text/javascript"></script>
->>>>>>> 26e1779b0b215c46721f19ff657d7cb877299bac
 		
 		<!--Slidepanel-->
 		<script type="text/javascript" src="./js/jquery.slidepanel.js"></script>
@@ -57,7 +49,6 @@
 		?>
 		
 		<?php $projectionFilepath=""; ?>
-<<<<<<< HEAD
 				
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -99,7 +90,6 @@
                     </ul>
                 </div>
 	    </div>
-=======
 	</head>
 	<body>
 	
@@ -130,4 +120,3 @@
 	<div class="horizbar" id="navbar"><div class="horizbar2"><?php include('00_navbar.php'); ?><div class="clear"></div></div></div><!--End Navbar-->
 	
 	<div class="horizbar" id="meat"><div class="horizbar2">
->>>>>>> 26e1779b0b215c46721f19ff657d7cb877299bac
